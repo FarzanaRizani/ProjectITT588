@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Calculator</title>
+      <link rel="shortcut icon" type="image/jpeg"  href="logo.png">
+    </head>
+    <body>
+        <script src="calPayment.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <div class="col-md-12 paymentCalc">
+
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="Calculator.html">Calculator</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="Feedback & Location.html">Feedback & Location</a></li>
+            </ul>
+
+            <div class="col-md-6">
+
+              <form id="loanCalc" action="" method="get" class="">
+                <div class="col-md-12">
+                  <h2>Calculate Your Auto Loan Payment</h2>
+                  <div class="form-group">
+                    <label for="vehiclePrice">Vehicle Price</label>
+                    <input type="text" class="form-control" id="vehiclePrice" placeholder="Vehicle Price">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="downPayment">Down Payment</label>
+                    <input type="text" class="form-control" id="downPayment" placeholder="Down Payment" value="0">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="tradeValue">Trade In Value</label>
+                    <input type="text" class="form-control" id="tradeValue" placeholder="Trade In Value" value="0">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="intRate">Interest Rate</label>
+                    <input type="text" class="form-control" id="intRate" placeholder="Interest Rate" value="3.25">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="loanTerm">Loan Term</label>
+                    <input type="text" class="form-control" id="loanTerm" placeholder="Loan Term (ex: 36 Months)">
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                  <a href="#" class="calcBtn" onclick="calculatePayments()" id="calculate" value="Calulate">Calculate</a>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <div id="paymentResults">
+          
+              </div>
+            </div>
+          </div>
+    </body>
+    <footer>
+      <p>
+        Copyright © 2022 Hypertext Blast
+    </p>
+  </footer>
+</html>
